@@ -14,7 +14,8 @@
 <body>
  <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">uCode</a>
+      <!--<a href="#!" class="brand-logo">uCode</a>-->
+      <%= link_to "uCode", root_path, :class => "brand-logo" %>
       <!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>-->
       <ul class="right hide-on-med-and-down">
       <!--<ul>-->
@@ -24,10 +25,12 @@
         <!--<li><a href="#"><i class="large material-icons"></i></a></li>-->
         <!--<li><a href="<!--%= pages_about_path %>"><i class="label"></i>about</a></li>-->
         <!--<li><a href="<!--%= pages_contact_path %>"><i class="contacts"></i>contact</a></li>-->
+        <li><a href="<%= root_path %>"></a></li>
         <li><a href="<%= pages_about_path %>">about</a></li>
         <li><a href="<%= pages_contact_path %>">contact</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
+        <li><a href="<%= root_path %>"></a></li>
         <li><a href="<%= pages_about_path %>">about</a></li>
         <li><a href="<%= pages_contact_path %>">contact</a></li>
       </ul>
