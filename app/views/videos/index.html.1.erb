@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h4>Listing Videos</h4>
-<!-- %
-=begin %-->
+
+<%
+=begin%>
 <%= link_to new_video_path, :class => 'btn-floating btn-large waves-effect waves-light red' do %>
-  <!--<i class="mdi-content-add"></i>-->
-  <i class="material-icons">add</i>
-<% end %>
+  <i class="mdi-content-add"></i>
+</% end %>
 <ul class="collapsible" data-collapsible="accordion">
   <% @videos.each do |video| %>
     <li>
@@ -15,8 +15,7 @@
         <%= link_to video.title, video %>
         <span class="right">
           <%= link_to edit_video_path(video) do %>
-            <!--<i class="mdi-content-create"></i>-->
-            <i class="large material-icons">mode_edit</i>
+            <i class="mdi-content-create"></i>
           <% end %>
           <%= link_to video, method: :delete, data: { confirm: 'Are you sure?' } do %>
             <i class="mdi-notification-event-busy"></i>
@@ -27,5 +26,5 @@
     </li>
   <% end %>
 </ul>
-<!-- %
-=end %-->
+<%
+=end%>
